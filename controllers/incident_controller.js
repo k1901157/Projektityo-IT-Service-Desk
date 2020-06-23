@@ -1,5 +1,21 @@
 const incident_model = require('../models/incident_model');
 
+const home_view = require('../views/home-views');
+
+const get_home =  (req, res, next) => {
+    const user = req.user;
+    user.populate()
+        .execPopulate()
+        .then(() => {
+            console.log('user:', user);
+            let data = {
+                user_name: user.name,
+               // tickets: user.tickets
+            };
+            let html = home_view.home_view(data)
+            res.send(html);
+        });
+};
 
 // HELPERS
 
@@ -89,6 +105,9 @@ const api_delete_incident = (req, res, next) => {
         console.log(err);
     });
 };
+
+
+module.exports.get_home = get_home;
 
 module.exports.api_post_incident = api_post_incident;
 module.exports.api_get_incidents = api_get_incidents;
