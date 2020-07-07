@@ -12,6 +12,8 @@ const session = require('express-session');
 //Controllers
 const auth_controller = require('./controllers/auth_controller');
 const incident_controller = require('./controllers/incident_controller');
+const order_controller = require('./controllers/order_controller');
+
 
 // npm init
 // npm install express
@@ -80,24 +82,33 @@ app.use("/", express.static("public_incident"));
 //incidents"
 app.use("/incidents", express.static("public_incident"));
 
+//  GET /index.html
+// -->  /public/index.html
+app.use("/", express.static("public_order"));
+//incidents"
+app.use("/orders", express.static("public_order"));
 
 // RESTful API
 // CRUD OPERATIONS
 
 //CREATE
 app.post("/api/incident", incident_controller.api_post_incident);
+app.post("/api/order", order_controller.api_post_order);
 
 //api.domain.com/incidents
 // READ
 app.get("/api/incidents", incident_controller.api_get_incidents);
+app.get("/api/orders", order_controller.api_get_orders);
 
 // UPDATE
 //app.patch korvaa vain tietyt kentät
 //app.put korvaa koko tiedon
 app.put("/api/incident/:id", incident_controller.api_put_incident);
+app.put("/api/order/:id", order_controller.api_put_order);
 
 // DELETE
 app.delete("/api/incident/:id", incident_controller.api_delete_incident);
+app.delete("/api/order/:id", order_controller.api_delete_order);
 
 
 //df5OnEZush49tpT2
