@@ -30,7 +30,8 @@ const incident_data = (req) => {
         priority: req.body.priority,
         description: req.body.description,
         status: req.body.status,
-        comment: req.body.comment
+        opening_date: req.body.opening_date,
+        closing_date: req.body.closing_date
     };
     return data;
 };

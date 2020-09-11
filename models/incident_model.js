@@ -32,6 +32,7 @@ const schema = new Schema({
     },
     priority: {
         type: Number,
+        options: ['1' ,'2', '3', '5' ],
         required: true
     },
     description: {
@@ -40,9 +41,14 @@ const schema = new Schema({
     },
     status: {
         type: String,
+        options: ['Open' ,'Closed' ],
         required: true
     },
-    comment: {
+    opening_date: {
+        type: String,
+        required: true
+    },
+    closing_date: {
         type: String,
         required: true
     }

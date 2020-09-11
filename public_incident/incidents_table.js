@@ -59,7 +59,8 @@ $(document).ready(() => {
             },
             {
                 data: "priority",
-                type: "float",
+                type: "select",
+                options: ['1' ,'2', '3', '5' ],
                 required: true
             },
             {
@@ -69,13 +70,19 @@ $(document).ready(() => {
             },
             {
                 data: "status",
-                type: "text",
+                type: "select",
+                options: ['Open' ,'Closed' ],
                 required: true
             },
             {
-                data: "comment",
-                type: "textarea",
+                data: "opening_date",
+                type: "date",
                 required: true
+            },
+            {
+                data: "closing_date",
+                type: "date",
+                required: false
             }
         ],
         dom: "Bfrtip",
