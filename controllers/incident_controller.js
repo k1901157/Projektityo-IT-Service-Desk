@@ -21,11 +21,16 @@ const get_home =  (req, res, next) => {
 
 const incident_data = (req) => {
     let data = {
+        ticket_number: req.body.ticket_number,
         type: req.body.type,
         customer_name: req.body.customer_name,
+        customer_email: req.body.customer_email,
+        customer_phone: req.body.customer_phone,
         assigned_to: req.body.assigned_to,
         priority: req.body.priority,
-        description: req.body.description
+        description: req.body.description,
+        status: req.body.status,
+        comment: req.body.comment
     };
     return data;
 };

@@ -27,12 +27,28 @@ $(document).ready(() => {
                 visible: false
             },
             {
-                data: "type",
+                data: "ticket_number",
                 type: "text",
                 required: true
             },
             {
+                data: "type",
+                type: "select",
+                options: ['Software' ,'Hardware', 'Network', 'Printers & Scanners', 'Not Listed' ],
+                required: true
+            },
+            {
                 data: "customer_name",
+                type: "text",
+                required: true
+            },
+            {
+                data: "customer_email",
+                type: "text",
+                required: true
+            },
+            {
+                data: "customer_phone",
                 type: "text",
                 required: true
             },
@@ -48,7 +64,17 @@ $(document).ready(() => {
             },
             {
                 data: "description",
+                type: "textarea",
+                required: true
+            },
+            {
+                data: "status",
                 type: "text",
+                required: true
+            },
+            {
+                data: "comment",
+                type: "textarea",
                 required: true
             }
         ],

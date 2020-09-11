@@ -1,8 +1,15 @@
 
 {
+    "ticket_number": "IT-00001",
     "type": "Hardware",
     "customer_name": "Toni",
+    "customer_email": "toni@firma.fi",
+    "customer_phone": "04009949",
     "assigned_to": "Osama",
     "priority": 3,
-    "description": "the main pc is not working fine, as seem as the HD not working"
+    "description": "the main pc is not working fine, as seem as the HD not working",
+    "status": "Open",
+    "comment": "everything has been sorted out",
+    "opening Date": "Ooen",
+    "closing Date": "Open"
 }

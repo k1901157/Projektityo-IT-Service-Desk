@@ -15,7 +15,11 @@ const home_view = (data) => {
     <hr align="left" width="75%">
     <h1>Welcome to IT Service Desk</h1>
     <div id=home>
-    <p>This application will work as IT customer care centre services, it will help you to contact IT department easily and quickly using this app.</p>
+    <p>
+    Website built out to help IT Team to create, delete, update Tickets related to the customer issues.<br><br>
+    This website designed to work as IT customer care centre services, and Database for all daily Tickets (Incident, Orders, etc..) to get them saved and documented.<br><br>
+    This website will help the customers and IT department to get all Tickets documented, organized and updated.
+    </p>
     <p>If you have any problems in your PCs or if you want to order anything you need from IT Department, so follow the below constractions: </p> 
     <p>1- for any Hardware, Software, Network or any other issues, please choose <b>Incident </b></p>
     <a class="nav" href= "/incidents"> Incidents </a><div></div></br>
