@@ -50,7 +50,7 @@ const schema = new Schema({
     },
     closing_date: {
         type: String,
-        required: true
+        required: false
     }
     
 });
