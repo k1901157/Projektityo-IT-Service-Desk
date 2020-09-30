@@ -21,11 +21,17 @@ const get_home =  (req, res, next) => {
 
 const order_data = (req) => {
     let data = {
-        type: req.body.type,
+        ticket_number: req.body.ticket_number,
+        order_type: req.body.order_type,
         customer_name: req.body.customer_name,
+        customer_email: req.body.customer_email,
+        customer_phone: req.body.customer_phone,
         assigned_to: req.body.assigned_to,
         priority: req.body.priority,
-        description: req.body.description
+        description: req.body.description,
+        status: req.body.status,
+        opening_date: req.body.opening_date,
+        delivery_date: req.body.delivery_date
     };
     return data;
 };

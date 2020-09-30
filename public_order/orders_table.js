@@ -27,12 +27,28 @@ $(document).ready(() => {
                 visible: false
             },
             {
-                data: "type",
+                data: "ticket_number",
                 type: "text",
                 required: true
             },
             {
+                data: "order_type",
+                type: "select",
+                options: ['Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'Printers or Scanners', 'Not Listed' ],
+                required: true
+            },
+            {
                 data: "customer_name",
+                type: "text",
+                required: true
+            },
+            {
+                data: "customer_email",
+                type: "text",
+                required: true
+            },
+            {
+                data: "customer_phone",
                 type: "text",
                 required: true
             },
@@ -43,13 +59,30 @@ $(document).ready(() => {
             },
             {
                 data: "priority",
-                type: "float",
+                type: "select",
+                options: ['1' ,'2', '3', '5' ],
                 required: true
             },
             {
                 data: "description",
-                type: "text",
+                type: "textarea",
+                required: false
+            },
+            {
+                data: "status",
+                type: "select",
+                options: ['Open' ,'Delivered' ],
                 required: true
+            },
+            {
+                data: "opening_date",
+                type: "date",
+                required: true
+            },
+            {
+                data: "delivery_date",
+                type: "date",
+                required: false
             }
         ],
         dom: "Bfrtip",
@@ -57,7 +90,7 @@ $(document).ready(() => {
         responsive: true,
         altEditor: true,
         buttons: [
-            "columnsToggle",
+           // "columnsToggle",
             {
                 text: "Create",
                 name: "add"

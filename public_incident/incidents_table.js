@@ -66,7 +66,7 @@ $(document).ready(() => {
             {
                 data: "description",
                 type: "textarea",
-                required: true
+                required: false
             },
             {
                 data: "status",
