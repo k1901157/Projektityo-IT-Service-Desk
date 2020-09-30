@@ -10,7 +10,7 @@ const get_home =  (req, res, next) => {
             console.log('user:', user);
             let data = {
                 user_name: user.name,
-               // tickets: user.tickets
+               // orders: user.orders
             };
             let html = home_view.home_view(data)
             res.send(html);
@@ -93,16 +93,6 @@ const api_put_order = (req, res, next) => {
 // DELETE /api/incident/5ef1b74136c9542118c18fda
 const api_delete_order = (req, res, next) => {
     let id = req.params.id;
-    // incident_model.findOneAndDelete({
-    //     name: id
-    // }).then(() => {
-    //     res.send();
-    // }).catch(err => {
-    //     res.status(500);
-    //     res.send(err.errmsg);
-    //     console.log(err);
-    // });
-
     order_model.findByIdAndRemove(id).then(() => {
         res.send();
     }).catch(err => {

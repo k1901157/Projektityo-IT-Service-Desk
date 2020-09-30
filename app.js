@@ -101,8 +101,6 @@ app.get("/api/incidents", incident_controller.api_get_incidents);
 app.get("/api/orders", order_controller.api_get_orders);
 
 // UPDATE
-//app.patch korvaa vain tietyt kentät
-//app.put korvaa koko tiedon
 app.put("/api/incident/:id", incident_controller.api_put_incident);
 app.put("/api/order/:id", order_controller.api_put_order);
 
@@ -111,7 +109,6 @@ app.delete("/api/incident/:id", incident_controller.api_delete_incident);
 app.delete("/api/order/:id", order_controller.api_delete_order);
 
 
-//df5OnEZush49tpT2
 const database_uri = "mongodb+srv://server:df5OnEZush49tpT2@cluster0-9q7ur.mongodb.net/IT-SDdb?retryWrites=true&w=majority";
 
 mongoose.connect(database_uri, {

@@ -12,11 +12,11 @@ const user_schema = new Schema({
         req: true
     }],
 
-    /*orders: [{
+    orders: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'order',
         req: true
-    }],*/
+    }],
 
 });
 const user_model = mongoose.model('user', user_schema);

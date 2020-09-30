@@ -1,17 +1,5 @@
-//jQuery(document)
-
-// "_id": "5e87764c63e79a85ecf73e49",
-// "name": "Steel_3",
-// "min_density": 685849,
-// "max_density": 1,
-// "min_strength": 333,
-// "max_strength": 4,
-// "min_strength_density": 333,
-// "max_strength_density": 0.00000583218755148728,
-
 $(document).ready(() => {
 
-    //let testi = $("#testi");
 
     let table = $("#orders_table").DataTable({
         ajax: {
