@@ -1,0 +1,14 @@
+
+{
+    "ticket_number": "ITO-00001",
+    "order_type": "Laptop",
+    "customer_name": "Toni",
+    "customer_email": "toni@firma.fi",
+    "customer_phone": "04009949",
+    "assigned_to": "Osama",
+    "priority": 3,
+    "description": "My old Laptop has been broken",
+    "status": "Open",
+    "opening_date": "24/09/2020",
+    "delivery_date": "24/09/2020"
+}

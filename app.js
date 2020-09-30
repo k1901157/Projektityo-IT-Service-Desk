@@ -74,16 +74,16 @@ app.use(body_parser.urlencoded({
 app.use((req, res, next) => {
     console.log(req.method, ' ', req.path);
     next();
-}); // GET /api/materials
+}); // GET /api/incidents - // GET /api/orders
 
 //  GET /index.html
-// -->  /public/index.html
+// -->  /public_incident/index.html
 app.use("/", is_logged_handler, express.static("public_incident"));
 //incidents"
 app.use("/incidents", is_logged_handler, express.static("public_incident"));
 
 //  GET /index.html
-// -->  /public/index.html
+// -->  /public_order/index.html
 app.use("/", express.static("public_order"));
 //incidents"
 app.use("/orders", express.static("public_order"));
