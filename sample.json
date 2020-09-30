@@ -9,6 +9,6 @@
     "priority": 3,
     "description": "the main pc is not working fine, as seem as the HD not working",
     "status": "Open",
-    "opening Date": "24/09/2020",
-    "closing Date": "24/09/2020"
+    "opening_date": "24/09/2020",
+    "closing_date": "24/09/2020"
 }

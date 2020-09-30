@@ -78,9 +78,9 @@ app.use((req, res, next) => {
 
 //  GET /index.html
 // -->  /public/index.html
-app.use("/", express.static("public_incident"));
+app.use("/", is_logged_handler, express.static("public_incident"));
 //incidents"
-app.use("/incidents", express.static("public_incident"));
+app.use("/incidents", is_logged_handler, express.static("public_incident"));
 
 //  GET /index.html
 // -->  /public/index.html
