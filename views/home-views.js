@@ -12,6 +12,7 @@ const home_view = (data) => {
     <a class="nav" href= "/home">Home</a>
     <a class="nav" href= "/incidents">Incidents</a>
     <a class="nav" href= "/orders">Orders</a>
+    <a class="nav" href= "/warehouses">Warehouse</a>
     <hr align="left" width="75%">
     <h1>Welcome to IT Service Desk</h1>
     <div id=home>

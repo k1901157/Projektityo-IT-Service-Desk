@@ -13,6 +13,7 @@ const session = require('express-session');
 const auth_controller = require('./controllers/auth_controller');
 const incident_controller = require('./controllers/incident_controller');
 const order_controller = require('./controllers/order_controller');
+const warehouse_controller = require('./controllers/warehouse_controller');
 
 
 // npm init
@@ -88,25 +89,35 @@ app.use("/", express.static("public_order"));
 //incidents"
 app.use("/orders", express.static("public_order"));
 
+//  GET /index.html
+// -->  /public_order/index.html
+app.use("/", express.static("public_warehouse"));
+//incidents"
+app.use("/warehouses", express.static("public_warehouse"));
+
 // RESTful API
 // CRUD OPERATIONS
 
 //CREATE
 app.post("/api/incident", incident_controller.api_post_incident);
 app.post("/api/order", order_controller.api_post_order);
+app.post("/api/warehouse", warehouse_controller.api_post_warehouse);
 
 //api.domain.com/incidents
 // READ
 app.get("/api/incidents", incident_controller.api_get_incidents);
 app.get("/api/orders", order_controller.api_get_orders);
+app.get("/api/warehouses", warehouse_controller.api_get_warehouses);
 
 // UPDATE
 app.put("/api/incident/:id", incident_controller.api_put_incident);
 app.put("/api/order/:id", order_controller.api_put_order);
+app.put("/api/warehouse/:id", warehouse_controller.api_put_warehouse);
 
 // DELETE
 app.delete("/api/incident/:id", incident_controller.api_delete_incident);
 app.delete("/api/order/:id", order_controller.api_delete_order);
+app.delete("/api/warehouse/:id", warehouse_controller.api_delete_warehouse);
 
 
 const database_uri = "mongodb+srv://server:df5OnEZush49tpT2@cluster0-9q7ur.mongodb.net/IT-SDdb?retryWrites=true&w=majority";

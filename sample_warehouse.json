@@ -1,0 +1,10 @@
+{
+    "item_number": "S-0001",
+    "item_type": "Laptop XX",
+    "serial_number": "1234567890",
+    "status": "in Stock",
+    "assigned_to": "IT-Team-Monitors",
+    "description": "the laptop had been deployed to IT Team",
+    "last_update": "24/09/2020",
+    "updated_by": "Osama Alshriefy"
+}
