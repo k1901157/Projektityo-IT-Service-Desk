@@ -21,18 +21,13 @@ const home_view = (data) => {
     This website designed to work as IT customer care centre services, and Database for all daily Tickets (Incident, Orders, etc..) to get them saved and documented.<br><br>
     This website will help the customers and IT department to get all Tickets documented, organized and updated.
     </p>
-    <p>If you have any problems in your PCs or if you want to order anything you need from IT Department, so follow the below constractions: </p> 
-    <p>1- for any Hardware, Software, Network or any other issues, please choose <b>Incident </b></p>
-    <a class="nav" href= "/incidents"> Incidents </a><div></div></br>
-    <p>2- for any Request for Laptop, Desktop, Printer, Applicaton....etc. please choose <b>Orders </b></p>
-    <a class="nav" href= "/orders"> Orders </a><div></div></br>
-    <p>once the ticket has been created then IT Department will contact you as per the ticket’s priority to get your issues sorted out.</P>
-    
+    <p>Below the types of Ticket to be created: </p> 
+    <p>1- For any Hardware, Software, Network or any other issues, please choose>>>> <b><a class="nav" href= "/incidents"> Incidents </a> </b></p>
+    <p>2- For any Request for Laptop, Desktop, Printer, Applicaton....etc. please choose>>>> <b><a class="nav" href= "/orders"> Orders </a></b></p>
+    <p>Once the ticket has been created then IT Department will contact you as per the ticket’s priority to get your issues sorted out.</P>
+    <p>*** To access IT Inventory Warehouse Database *** >>> <a class="nav" href= "/warehouses"> Warehouse </a></p>
     </div> 
     
-    <h2> Type of Tickets:</h2>
-    <a class="nav" href= "/incidents">1- Incidents (Hardware and Software issues)</a><div></div></br>
-    <a class="nav" href= "/orders">2- Order (Order items)</a><div></div></br>
 
     
 
