@@ -20,9 +20,9 @@ $(document).ready(() => {
                 required: true
             },
             {
-                data: "type",
+                data: "incident_type",
                 type: "select",
-                options: ['Software' ,'Hardware', 'Network', 'Printers & Scanners', 'Not Listed' ],
+                options: ['', 'Software' ,'Hardware', 'Network', 'Printers & Scanners', 'Not Listed' ],
                 required: true
             },
             {
@@ -48,7 +48,7 @@ $(document).ready(() => {
             {
                 data: "priority",
                 type: "select",
-                options: ['1' ,'2', '3', '5' ],
+                options: ['', '1' ,'2', '3', '5' ],
                 required: true
             },
             {
@@ -59,7 +59,7 @@ $(document).ready(() => {
             {
                 data: "status",
                 type: "select",
-                options: ['Open' ,'Closed' ],
+                options: ['', 'Open' ,'Closed' ],
                 required: true
             },
             {

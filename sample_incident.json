@@ -1,7 +1,7 @@
 
 {
     "ticket_number": "IT-00001",
-    "type": "Hardware",
+    "inciden_type": "Hardware",
     "customer_name": "Toni",
     "customer_email": "toni@firma.fi",
     "customer_phone": "04009949",

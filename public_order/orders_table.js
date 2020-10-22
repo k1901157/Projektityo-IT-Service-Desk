@@ -22,7 +22,7 @@ $(document).ready(() => {
             {
                 data: "order_type",
                 type: "select",
-                options: ['Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'Printers or Scanners', 'Not Listed' ],
+                options: ['', 'Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'Printers or Scanners', 'Not Listed' ],
                 required: true
             },
             {
@@ -48,7 +48,7 @@ $(document).ready(() => {
             {
                 data: "priority",
                 type: "select",
-                options: ['1' ,'2', '3', '5' ],
+                options: ['', '1' ,'2', '3', '5' ],
                 required: true
             },
             {
@@ -59,7 +59,7 @@ $(document).ready(() => {
             {
                 data: "status",
                 type: "select",
-                options: ['Open' ,'Delivered' ],
+                options: ['', 'Open' ,'Delivered' ],
                 required: true
             },
             {
@@ -78,7 +78,7 @@ $(document).ready(() => {
         responsive: true,
         altEditor: true,
         buttons: [
-           // "columnsToggle",
+            "columnsToggle",
             {
                 text: "Create",
                 name: "add"

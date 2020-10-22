@@ -22,7 +22,7 @@ const get_home =  (req, res, next) => {
 const incident_data = (req) => {
     let data = {
         ticket_number: req.body.ticket_number,
-        type: req.body.type,
+        incident_type: req.body.incident_type,
         customer_name: req.body.customer_name,
         customer_email: req.body.customer_email,
         customer_phone: req.body.customer_phone,

@@ -9,7 +9,7 @@ const schema = new Schema({
             unique: true
         }
     },
-    type: {
+    incident_type: {
         type: String,
         options: ['Software' ,'Hardware', 'Network', 'Printers & Scanners', 'Not Listed' ],
         required: true
