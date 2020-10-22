@@ -6,6 +6,10 @@ const user_schema = new Schema({
         type: String,
         required: true
     },
+    password: {
+        type: String,
+        required: false
+    },
     incidents: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'incident',

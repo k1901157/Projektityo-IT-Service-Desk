@@ -28,8 +28,10 @@ const post_logout = (req, res, next) => {
 
 const post_login = (req, res, next) => {
     const user_name = req.body.user_name;
+    const password = req.body.password;
     user_model.findOne({
-        name: user_name
+        name: user_name,
+        password:password
     }).then((user) => {
         if (user) {
             req.session.user = user;
