@@ -26,6 +26,7 @@ const warehouse_data = (req) => {
         serial_number: req.body.serial_number,
         status: req.body.status,
         assigned_to: req.body.assigned_to,
+        deployed_to: req.body.deployed_to,
         description: req.body.description,
         last_update: req.body.last_update,
         updated_by: req.body.updated_by

@@ -11,7 +11,7 @@ const schema = new Schema({
     },
     order_type: {
         type: String,
-        options: ['Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'Printers or Scanners', 'Not Listed' ],
+        options: ['Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'IP Phone', 'Not Listed' ],
         required: true
     },
     customer_name: {
@@ -41,7 +41,7 @@ const schema = new Schema({
     },
     status: {
         type: String,
-        options: ['Open' ,'Delivered' ],
+        options: ['Open' ,'Waiting for Approval', 'Delivered' ],
         required: true
     },
     opening_date: {

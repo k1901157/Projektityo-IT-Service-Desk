@@ -22,7 +22,7 @@ $(document).ready(() => {
             {
                 data: "item_type",
                 type: "select",
-                options: ['Laptop XX' ,'Laptop XY', 'Desktop XX', 'Monitor XX 23', 'Monitor XY 27', 'Scanners XX', 'Printers XX', 'IP Phone XX' ],
+                options: ['', 'Laptop XX' ,'Laptop XY', 'Desktop XX', 'Monitor XX 23', 'Monitor XY 27', 'Scanners XX', 'Printers XX', 'IP Phone XX' ],
                 required: true
             },
             {
@@ -33,20 +33,24 @@ $(document).ready(() => {
             {
                 data: "status",
                 type: "select",
-                options: ['in Stock' ,'Deployed', 'Retired' ],
+                options: ['', 'in Stock' ,'Deployed', 'Retired' ],
                 required: true
             },
             {
                 data: "assigned_to",
                 type: "select",
-                options: ['IT-Team-Monitors' ,'IT-Team-Laptops', 'IT-Team-Desktops', 'IT-Team-Scanners and Printers', 'IT-Team-IP Phone' ],
+                options: ['', 'IT-Team-Monitors' ,'IT-Team-Laptops', 'IT-Team-Desktops', 'IT-Team-Scanners and Printers', 'IT-Team-IP Phone' ],
                 required: true
             },
-
+            {
+                data: "deployed_to",
+                type: "text",
+                required: false
+            },
             {
                 data: "description",
                 type: "textarea",
-                required: true
+                required: false
             },
 
             {

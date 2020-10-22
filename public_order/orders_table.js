@@ -22,7 +22,7 @@ $(document).ready(() => {
             {
                 data: "order_type",
                 type: "select",
-                options: ['', 'Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'Printers or Scanners', 'Not Listed' ],
+                options: ['', 'Laptop' ,'Desktop', 'Monitor', 'Printers or Scanners', 'IP Phone', 'Not Listed' ],
                 required: true
             },
             {
@@ -59,7 +59,7 @@ $(document).ready(() => {
             {
                 data: "status",
                 type: "select",
-                options: ['', 'Open' ,'Delivered' ],
+                options: ['', 'Open' ,'Waiting for Approval', 'Delivered' ],
                 required: true
             },
             {

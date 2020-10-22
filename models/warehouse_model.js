@@ -32,10 +32,13 @@ const schema = new Schema({
         options: ['IT-Team-Monitors' ,'IT-Team-Laptops', 'IT-Team-Desktops', 'IT-Team-Scanners and Printers', 'IT-Team-IP Phone' ],
         required: true
     },
-
+    deployed_to: {
+        type: String,
+        required: false
+    },
     description: {
         type: String,
-        required: true
+        required: false
     },
 
     last_update: {
