@@ -25,7 +25,7 @@ const home_view = (data) => {
     <p>1- For any Hardware, Software, Network or any other issues, please choose>>>> <b><a class="nav" href= "/incidents"> Incidents </a> </b></p>
     <p>2- For any Request for Laptop, Desktop, Printer, Applicaton....etc. please choose>>>> <b><a class="nav" href= "/orders"> Orders </a></b></p>
     <p>Once the ticket has been created then IT Department will contact you as per the ticket’s priority to get your issues sorted out.</P>
-    <p>*** To access IT Inventory Warehouse Database *** >>> <a class="nav" href= "/warehouses"> Warehouse </a></p>
+    <p>*** To access IT Inventory Warehouse Database *** >>> <b><a class="nav" href= "/warehouses"> Warehouse </a></b></p>
     </div> 
     
 
