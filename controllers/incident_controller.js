@@ -18,7 +18,6 @@ const get_home =  (req, res, next) => {
 };
 
 // HELPERS
-
 const incident_data = (req) => {
     let data = {
         ticket_number: req.body.ticket_number,
@@ -70,7 +69,7 @@ const api_get_incidents = (req, res, next) => {
 };
 
 // UPDATE
-//PUT /api/incident/5ef1b74136c9542118c18fda
+//PUT /api/incident/:id
 const api_put_incident = (req, res, next) => {
     console.log('api_put_incident');
     let id = req.params.id;
@@ -90,7 +89,7 @@ const api_put_incident = (req, res, next) => {
 
 
 // DELETE
-// DELETE /api/incident/5ef1b74136c9542118c18fda
+// DELETE /api/incident/:id
 const api_delete_incident = (req, res, next) => {
     let id = req.params.id;
     incident_model.findByIdAndRemove(id).then(() => {

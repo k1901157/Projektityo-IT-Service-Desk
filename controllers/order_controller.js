@@ -18,7 +18,6 @@ const get_home =  (req, res, next) => {
 };
 
 // HELPERS
-
 const order_data = (req) => {
     let data = {
         ticket_number: req.body.ticket_number,
@@ -70,7 +69,7 @@ const api_get_orders = (req, res, next) => {
 };
 
 // UPDATE
-//PUT /api/incident/5ef1b74136c9542118c18fda
+//PUT /api/order/:id
 const api_put_order = (req, res, next) => {
     console.log('api_put_order');
     let id = req.params.id;
@@ -90,7 +89,7 @@ const api_put_order = (req, res, next) => {
 
 
 // DELETE
-// DELETE /api/incident/5ef1b74136c9542118c18fda
+// DELETE /api/Order/:id
 const api_delete_order = (req, res, next) => {
     let id = req.params.id;
     order_model.findByIdAndRemove(id).then(() => {

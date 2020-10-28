@@ -18,7 +18,6 @@ const get_home =  (req, res, next) => {
 };
 
 // HELPERS
-
 const warehouse_data = (req) => {
     let data = {
         item_number: req.body.item_number,
@@ -68,7 +67,7 @@ const api_get_Warehouse_items = (req, res, next) => {
 };
 
 // UPDATE
-//PUT /api/warehouse/5ef1b74136c9542118c18fda
+//PUT /api/warehouse/:id
 const api_put_warehouse = (req, res, next) => {
     console.log('api_put_warehouse');
     let id = req.params.id;
@@ -88,7 +87,7 @@ const api_put_warehouse = (req, res, next) => {
 
 
 // DELETE
-// DELETE /api/warehouse/5ef1b74136c9542118c18fda
+// DELETE /api/warehouse/:id
 const api_delete_warehouse = (req, res, next) => {
     let id = req.params.id;
     warehouse_model.findByIdAndRemove(id).then(() => {
