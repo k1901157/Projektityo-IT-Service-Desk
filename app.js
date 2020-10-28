@@ -1,20 +1,15 @@
 const express = require('express');
 const port = process.env.PORT || 8080;
 const mongoose = require('mongoose');
-
 const app = express();
-
 const body_parser = require('body-parser');
-
 const session = require('express-session');
-
 
 //Controllers
 const auth_controller = require('./controllers/auth_controller');
 const incident_controller = require('./controllers/incident_controller');
 const order_controller = require('./controllers/order_controller');
 const warehouse_controller = require('./controllers/warehouse_controller');
-
 
 // npm init
 // npm install express
@@ -64,18 +59,15 @@ app.post('/logout', auth_controller.post_logout);
 app.get('/', is_logged_handler, incident_controller.get_home);
 app.get('/home', is_logged_handler, incident_controller.get_home);
 
-
-
-
 app.use(body_parser.json()); //req.body.name
 app.use(body_parser.urlencoded({
     extended: true
-})); // material/id
+}));
 
 app.use((req, res, next) => {
     console.log(req.method, ' ', req.path);
     next();
-}); // GET /api/incidents - // GET /api/orders
+}); // GET /api/incidents - // GET /api/orders - // GET /api/warehouse_items
 
 //  GET /index.html
 // -->  /public_incident/index.html
@@ -86,13 +78,13 @@ app.use("/incidents", is_logged_handler, express.static("public_incident"));
 //  GET /index.html
 // -->  /public_order/index.html
 app.use("/", express.static("public_order"));
-//incidents"
+//orders"
 app.use("/orders", express.static("public_order"));
 
 //  GET /index.html
-// -->  /public_order/index.html
+// -->  /public_warehouse/index.html
 app.use("/", express.static("public_warehouse"));
-//incidents"
+//warehouse_items"
 app.use("/Warehouse_items", express.static("public_warehouse"));
 
 // RESTful API
@@ -103,7 +95,6 @@ app.post("/api/incident", incident_controller.api_post_incident);
 app.post("/api/order", order_controller.api_post_order);
 app.post("/api/warehouse", warehouse_controller.api_post_warehouse);
 
-//api.domain.com/incidents
 // READ
 app.get("/api/incidents", incident_controller.api_get_incidents);
 app.get("/api/orders", order_controller.api_get_orders);
