@@ -93,7 +93,7 @@ app.use("/orders", express.static("public_order"));
 // -->  /public_order/index.html
 app.use("/", express.static("public_warehouse"));
 //incidents"
-app.use("/warehouses", express.static("public_warehouse"));
+app.use("/Warehouse_items", express.static("public_warehouse"));
 
 // RESTful API
 // CRUD OPERATIONS
@@ -107,7 +107,7 @@ app.post("/api/warehouse", warehouse_controller.api_post_warehouse);
 // READ
 app.get("/api/incidents", incident_controller.api_get_incidents);
 app.get("/api/orders", order_controller.api_get_orders);
-app.get("/api/warehouses", warehouse_controller.api_get_warehouses);
+app.get("/api/Warehouse_items", warehouse_controller.api_get_Warehouse_items);
 
 // UPDATE
 app.put("/api/incident/:id", incident_controller.api_put_incident);

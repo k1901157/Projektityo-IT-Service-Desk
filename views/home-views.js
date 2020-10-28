@@ -12,7 +12,7 @@ const home_view = (data) => {
     <a class="nav" href= "/home">Home</a>
     <a class="nav" href= "/incidents">Incidents</a>
     <a class="nav" href= "/orders">Orders</a>
-    <a class="nav" href= "/warehouses">Warehouse</a>
+    <a class="nav" href= "/Warehouse_items">Warehouse</a>
     <hr align="left" width="75%">
     <h1>Welcome to IT Service Desk</h1>
     <div id=home>
@@ -25,7 +25,7 @@ const home_view = (data) => {
     <p>1- For any Hardware, Software, Network or any other issues, please choose>>>> <b><a class="nav" href= "/incidents"> Incidents </a> </b></p>
     <p>2- For any Request for Laptop, Desktop, Printer, Applicaton....etc. please choose>>>> <b><a class="nav" href= "/orders"> Orders </a></b></p>
     <p>Once the ticket has been created then IT Department will contact you as per the ticket’s priority to get your issues sorted out.</P>
-    <p>*** To access IT Inventory Warehouse Database *** >>> <b><a class="nav" href= "/warehouses"> Warehouse </a></b></p>
+    <p>*** To access IT Inventory Warehouse Database *** >>> <b><a class="nav" href= "/Warehouse_items"> Warehouse </a></b></p>
     </div> 
     
 

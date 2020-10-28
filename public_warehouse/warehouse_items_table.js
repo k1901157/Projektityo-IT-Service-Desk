@@ -1,11 +1,11 @@
 $(document).ready(() => {
 
 
-    let table = $("#warehouses_table").DataTable({
+    let table = $("#Warehouse_items_table").DataTable({
         ajax: {
             type: "GET",
             datatype: "json",
-            url: "/api/warehouses",
+            url: "/api/Warehouse_items",
             dataSrc: ""
         },
         rowId: "_id",

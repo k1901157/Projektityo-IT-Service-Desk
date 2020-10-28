@@ -10,7 +10,7 @@ const get_home =  (req, res, next) => {
             console.log('user:', user);
             let data = {
                 user_name: user.name,
-               // warehouses: user.warehouses
+               // Warehouse_items: user.Warehouse_items
             };
             let html = home_view.home_view(data)
             res.send(html);
@@ -53,13 +53,13 @@ const api_post_warehouse = (req, res, next) => {
 };
 
 // READ
-const api_get_warehouses = (req, res, next) => {
-    console.log('api_get_warehouses');
+const api_get_Warehouse_items = (req, res, next) => {
+    console.log('api_get_Warehouse_items');
 
     warehouse_model.find({})
         .lean()
-        .then(warehouses => {
-            res.send(JSON.stringify(warehouses));
+        .then(Warehouse_items => {
+            res.send(JSON.stringify(Warehouse_items));
         }).catch(err => {
             res.status(500);
             res.send(err.errmsg);
@@ -104,6 +104,6 @@ const api_delete_warehouse = (req, res, next) => {
 module.exports.get_home = get_home;
 
 module.exports.api_post_warehouse = api_post_warehouse;
-module.exports.api_get_warehouses = api_get_warehouses;
+module.exports.api_get_Warehouse_items = api_get_Warehouse_items;
 module.exports.api_put_warehouse = api_put_warehouse;
 module.exports.api_delete_warehouse = api_delete_warehouse;
