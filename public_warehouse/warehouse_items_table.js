@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 
-    let table = $("#Warehouse_items_table").DataTable({
+    let table = $("#warehouse_items_table").DataTable({
         ajax: {
             type: "GET",
             datatype: "json",
